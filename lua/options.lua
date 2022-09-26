@@ -32,7 +32,6 @@ try
   colorscheme tokyonight
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
-  set background=dark
 endtry
 ]]
 
@@ -52,9 +51,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.o.showmode = false -- Using custom bar
 vim.o.showtabline = 2 -- Always show tabs
 vim.o.scrolloff = 8
-vim.o.sidescrollof = 8 -- Maybe get rid
+-- vim.o.sidescrollof = 8 -- Maybe get rid
 vim.o.swapfile = false
-vim.o.smartindex = true
+-- vim.o.smartindex = true
 vim.o.fileencoding = "utf-8" -- Default by vim probably
 vim.o.wrap = true
 vim.opt.tabstop = 4
