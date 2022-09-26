@@ -1,4 +1,5 @@
 -- [[ Basic Keymaps ]]
+local opts = { noremap = true, silent = true}
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
@@ -25,3 +26,12 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
 -- Move lines up and down
 vim.keymap.set('n', '<A-j>', ':m .+1<CR>==')
 vim.keymap.set('n', '<A-k>', ':m .-2<CR>==')
+
+
+-- Buffer 
+vim.keymap.set('n', '<S-l>', ':bn<CR>')
+vim.keymap.set('n', '<S-h>', ':bp<CR>')
+
+-- Stay in visual mode
+vim.keymap.set('v', '<', '<gv', opts)
+vim.keymap.set('v', '>', '>gv', opts)

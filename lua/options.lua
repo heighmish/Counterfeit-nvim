@@ -43,3 +43,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+vim.o.showmode = false -- Using custom bar
+vim.o.showtabline = 2 -- Always show tabs
+vim.o.scrolloff = 8
+vim.o.sidescrollof = 8 -- Maybe get rid
+vim.o.swapfile = false
+vim.o.smartindex = true
+vim.o.fileencoding = "utf-8" -- Default by vim probably
+vim.o.wrap = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true -- tabs represented by spaces
