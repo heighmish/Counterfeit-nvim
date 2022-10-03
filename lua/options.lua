@@ -25,15 +25,8 @@ vim.o.smartcase = true
 vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
 
--- Set colorscheme
+-- -- Set colorscheme
 vim.o.termguicolors = true
-vim.cmd [[
-try
-  colorscheme tokyonight
-catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
-endtry
-]]
 
 vim.o.completeopt = 'menuone,noselect'
 
