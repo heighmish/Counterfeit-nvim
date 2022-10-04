@@ -62,5 +62,8 @@ require('nvim-treesitter.configs').setup {
     enable = true,
     enable_autocmd = false,
   },
+  autotag = { -- Enable autoclosing HTML tags
+    enable = true,
+  }
 }
 
